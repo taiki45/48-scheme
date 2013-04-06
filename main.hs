@@ -4,4 +4,6 @@ import System.Environment
 main :: IO ()
 main = do
     args <- getArgs
-    putStrLn ("Hello, " ++ args !! 0)
+    let x = read (args !! 0)
+    let y = read (args !! 1)
+    putStrLn (show (x + y))
